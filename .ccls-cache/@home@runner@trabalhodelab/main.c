@@ -5,7 +5,7 @@ int main(void) {
   int aleatorio,jogada;
   srand((unsigned)time(NULL));
   aleatorio = rand() %3;
-  //0 = pedra 1 = papel 2 = tesoura
+  //0 = pedra 1 = papel 2 = tesoura 3 = lagarto 4 = spock
   do{
   printf("digite sua jogada:\n0 = pedra\n1 = papel\n2 = tesoura\n");
   scanf("%d",&jogada);
