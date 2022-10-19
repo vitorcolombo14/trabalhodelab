@@ -3,6 +3,8 @@
 #include <stdlib.h>
 int main(void) {
   int aleatorio,jogada;
+  char desejo = 's';
+  while(desejo == 's'){
   srand((unsigned)time(NULL));
   aleatorio = rand() %3;
   //0 = pedra 1 = papel 2 = tesoura
@@ -46,5 +48,9 @@ int main(void) {
   if(aleatorio == 2 && jogada == 0){
     printf("Player venceu!");
   }
+    printf("\ndeseja jogar novamente? s/n\n");
+    scanf(" %c",&desejo);
+    
+    }
   return 0;
 }
